@@ -55,3 +55,14 @@ ctx.fillStyle = 'red'; // !
 // fills the inner circle with red color
 ctx.fill();
 ctx.closePath();
+
+// ****************************
+// draw text
+// ****************************
+
+// color the text
+ctx.fillStyle = 'orange';
+ctx.font = '30px Arial';
+// ctx.fillText("string", x, y); => x, y are coordinates where the text
+// is going to appear
+ctx.fillText('Hello there', 70, 40);
