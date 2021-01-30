@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d');
 // ****************************
  
 ctx.fillStyle = 'purple';
-ctx.fillRect(160, 160, 60, 60);
+ctx.fillRect(160, 160, 50, 50);
 
 // ****************************
 // draw path
@@ -31,4 +31,27 @@ ctx.lineTo(250, 100);
 ctx.stroke();
 
 // close the path
+ctx.closePath();
+
+
+// javascripts/intro.js
+// ...
+
+// ****************************
+// draw circle
+// ****************************
+
+ctx.beginPath();
+// ctx.arc(x, y, radius, startAngle, endAngle)
+ctx.arc(150, 170, 75, 0, Math.PI * 2);
+ctx.lineWidth = 20;
+ctx.strokeStyle = 'green'; // !
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.arc(150, 170, 35, 0, Math.PI * 2);
+ctx.fillStyle = 'red'; // !
+// fills the inner circle with red color
+ctx.fill();
 ctx.closePath();
